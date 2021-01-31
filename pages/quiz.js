@@ -108,7 +108,7 @@ export default function QuizPage() {
     if (nextQuestion < totalQuestions) {
       setQuestionIndex(nextQuestion);
     } else {
-      setQuestionIndex(screenStates.RESULT);
+      setScreenState(screenStates.RESULT);
     }
   }
 
