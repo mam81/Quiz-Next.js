@@ -1,13 +1,15 @@
 /* eslint-disable react/prop-types */
 import React, { useEffect, useState } from 'react';
 
-import db from '../db.json';
-import Widget from '../src/components/Widget';
-import QuizBackground from '../src/components/QuizBackground';
-import QuizContainer from '../src/components/QuizContainer';
-import Button from '../src/components/Button';
-import GitHubCorner from '../src/components/GitHubCorner';
-import AlternativeForm from '../src/components/AlternativeForm';
+import db from '../../db.json';
+import Widget from '../../src/components/Widget';
+import QuizBackground from '../../src/components/QuizBackground';
+import QuizContainer from '../../src/components/QuizContainer';
+import Button from '../../src/components/Button';
+import GitHubCorner from '../../src/components/GitHubCorner';
+import AlternativeForm from '../../src/components/AlternativeForm';
+import BackLinkArrow from '../../src/components/BackLinkArrow';
+
 
 function ResultWidget({ results }) {
   return (
@@ -67,7 +69,7 @@ function QuestionWidget({
   return (
     <Widget>
       <Widget.Header>
-        {/* <BackLinkArrow heref="/" /> */}
+        <BackLinkArrow href="/" />
         <h3>
           {`Pergunta ${questionIndex + 1} de ${totalQuestions}`}
         </h3>
